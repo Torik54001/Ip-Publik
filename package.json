@@ -1,0 +1,15 @@
+{
+  "name": "okeconnect-static-egress-scf",
+  "version": "1.7.0",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check server.js && node --check test/gateway.test.js",
+    "test": "node --test test/*.test.js",
+    "start": "node server.js"
+  }
+}
